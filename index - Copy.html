@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="description" content="DJ Weger - Bringing the best beats to your party! Book me for events, check out my latest tracks and mixes.">
+    <meta name="keywords" content="DJ, Musik, Events, Musikproduktion, Partys, DJ buchen, DJ Weger, Weger">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Weger | Musik & Events - Ihr DJ für unvergessliche Partys</title>
+    <link rel="icon" type="image/x-icon" href="dj_logo_schwarz.png">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="script.js"></script>
+</head>
+
+
+
+<body>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
+    <header>
+        <div class="header-background"></div>
+        <img src="Weiß_transparent3.png" alt="Logo" class="header-logo">
+        <p>Bringing the best beats to your party!</p>
+    </header>
+    <nav>
+        <div class="nav-toggle" id="nav-toggle">
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+        </div>
+        <a href="index.html"><img src="Weiß_transparent3.png" alt="Logo" class="nav-logo"></a>
+
+        <div class="nav-links">
+            <a href="#about">Über Mich</a>
+            <a href="#music">Musik</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+    </nav>
+    <section id="about">
+        <br />
+        <br />
+        <br />
+        <h1>Über Mich</h1>
+        <div class="tradingview-widget-container">
+            <div id="tradingview_chart"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "container_id": "tradingview_chart",
+                    "symbol": "BTCUSD",  // Symbol für den S&P 500
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "details": true,
+                    "studies": [],
+                    "show_popup_button": true,
+                    "popup_width": "2000",
+                    "popup_height": "1650"
+                });
+            </script>
+        </div>
+
+
+        <div class="profile">
+            <img src="me.jpeg" alt="DJ Weger">
+            <p style="background-color:rgba(30, 20, 30, 1)">
+
+
+                Ich bin Noah Weger, besser bekannt als DJ Weger, und ich liebe es, die besten Beats auf die Tanzfläche zu bringen. Mit jahrelanger Erfahrung in der Musikindustrie sorge ich dafür, dass jede Party unvergesslich wird. Meine musikalische Reise begann in der Kindheit und führte mich von kleinen privaten Feiern bis zu großen Festivals. Ich mische verschiedene Genres, von House und Techno bis Hip-Hop und Pop, um mich an die Wünsche meines Publikums anzupassen und einzigartige Erlebnisse zu schaffen.
+                <br /><br />
+                Neben dem Auflegen arbeite ich als Musikproduzent und habe eigene Tracks veröffentlicht, die breite Anerkennung gefunden haben. Meine Produktionen zeichnen sich durch rhythmische Innovationen und eingängige Melodien aus, die ich in meine DJ-Sets einfließen lasse. Die Zusammenarbeit mit anderen Künstlern und Veranstaltern erweitert mein Netzwerk und inspiriert mich kontinuierlich.
+                <br /><br />
+                Ob in Clubs, auf Hochzeiten, Firmenfeiern oder öffentlichen Events – mein Ziel ist es, Menschen durch Musik zu verbinden und besondere Momente zu schaffen. Als DJ Weger stehe ich für Qualität, Leidenschaft und die Kunst, jede Veranstaltung einzigartig zu machen.
+            </p>
+        </div>
+    </section>
+    <section id="music">
+        <br />
+        <br />
+        <br />
+        <h1>Musik</h1>
+        <p>Hier findest du eine Auswahl meiner neuesten Mixes und Tracks.</p>
+        <a href="https://soundcloud.com/thisisredstone" target="_blank">Zu meinem Soundcloud Account!</a>
+        <br /><br />
+        <audio controls>
+            <source src="sample-music.mp3" type="audio/mp3">
+            Dein Browser unterstützt das Audio-Element nicht.
+        </audio>
+        <br />
+        <br />
+        <img src="music.jpg" alt="DJ Weger Music">
+    </section>
+    <section id="events">
+        <br />
+        <br />
+        <br />
+        <h1>Events</h1>
+        <p>Schau dir meine kommenden Auftritte an und buche mich für dein nächstes Event!</p>
+        <div class="carousel">
+            <img src="TML.jpg" alt="Torrowland">
+            <img src="Coachella.jpg" alt="Coachella">
+            <img src="Hausfete.jpg" alt="Hausfete">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <br />
+        <br />
+        <br />
+        <h1>Kontakt</h1>
+        <!--
+        <p>Kontaktiere mich für Buchungen und Anfragen:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br />
+            <label for="message">Nachricht:</label>
+            <input id="message" style="height=200p" name="message" required></input>
+            <br />
+            <button type="submit">Absenden</button>
+        </form>
+    //-->
+        <br />
+        <br />
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelo0od5HRczWPPZBoBZ9McBJiNHx-dBdJjZ7HEh-kOC5Uirw/viewform?embedded=true" width=80% height=1000 frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+        <h1>Oder</h1>
+        <p>Email:</p>
+
+        <a href="mailto:noah.weger123@gmail.com" target="_blank">noah.weger123@gmail.com</a>
+        <br />
+        <p>Telefon:</p>
+        <a href="tel:+393245810432" target="_blank">324 581 0432</a>
+        <br />
+        <p>Insta:</p>
+        <a href="https://www.instagram.com/wegernoah/" target="_blank">Zu meinem Insta!</a>
+        <br />
+    </section>
+    <footer>
+        <p>&copy; 2024 DJ Weger. All rights reserved.</p>
+    </footer>
+</body>
+    </html>

@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 100%;
+    background: url('header-background.jpg') no-repeat center center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 7em;
+    margin: 0;
+}
+
+
+.header-logo {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1000px; /* Set a maximum width to prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #000000;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and hamburger menu */
+}
+
+/* Hide navigation links by default for small screens */
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* Hamburger menu styles */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above other content */
+    position: absolute;
+    right: 1em; /* Align to the right */
+}
+
+.nav-bar {
+    background-color: #ffffff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Show the hamburger menu on small screens */
+@media (max-width: 550px) {
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: #000000;
+        position: absolute;
+        top: 60px; /* Adjust if necessary */
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+        .nav-links.show {
+            display: flex;
+        }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Adjust logo position on small screens */
+    nav img.nav-logo {
+        height: 50px; /* Adjust if necessary */
+    }
+}
+
+    nav img.nav-logo {
+        height: 50px; /* Adjust the height as needed */
+    }
+
+    nav .nav-links {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center; /* Center the links horizontally */
+    }
+
+        nav .nav-links a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+section {
+    padding: 2em;
+    margin-top: 3.5em; /* Adjust this value if necessary to avoid overlap with the fixed nav */
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1em;
+    position: unset;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1em;
+}
+
+    .carousel img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    form label {
+        margin: 0.5em 0 0.2em;
+    }
+
+    form input, form textarea {
+        width: 80%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    form button {
+        padding: 0.7em 2em;
+        background-color: #555;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        form button:hover {
+            background-color: #777;
+        }
+
+
+    .hover_bkgr_fricc {
+        background: rgba(0,0,0,.4);
+        cursor: pointer;
+        display: none;
+        height: 100%;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+    }
+
+    .hover_bkgr_fricc .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .hover_bkgr_fricc > div {
+        background-color: #fff;
+        box-shadow: 10px 10px 60px #555;
+        display: inline-block;
+        height: auto;
+        max-width: 551px;
+        min-height: 100px;
+        vertical-align: middle;
+        width: 60%;
+        position: relative;
+        border-radius: 8px;
+        padding: 15px 5%;
+    }
+
+    .popupCloseButton {
+        background-color: #fff;
+        border: 3px solid #999;
+        border-radius: 50px;
+        cursor: pointer;
+        display: inline-block;
+        font-family: arial;
+        font-weight: bold;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        font-size: 25px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+
+    .popupCloseButton:hover {
+        background-color: #ccc;
+    }
+
+    .trigger_popup_fricc {
+        cursor: pointer;
+        font-size: 20px;
+        margin: 20px;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+.profile {
+    display: flex;
+    flex-direction: column; /* Default layout for narrow screens */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 1em;
+}
+
+    .profile img {
+        max-width: 100%;
+        height: auto;
+        max-height: 400px;
+        margin-bottom: 1em; /* Space between the image and text */
+    }
+
+
+
+@media (min-width: 768px) {
+    .profile {
+        flex-direction: row; /* Side by side layout for wide screens */
+        align-items: center; /* Center items vertically */
+        text-align: left; /* Align text to the left */
+        justify-content: center;
+    }
+
+        .profile img {
+            margin-bottom: 0; /* Remove bottom margin for wide screens */
+            margin-right: 5em; /* Space between the image and text */
+            max-width: 50%; /* Adjust width as needed */
+        }
+
+        .profile p {
+            max-width: 50%; /* Adjust width as needed */
+        }
+}
+
