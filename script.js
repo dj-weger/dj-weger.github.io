@@ -27,3 +27,7 @@ $(document).ready(function () {
         $("#nav-links").toggleClass("show");
     });
 });
+
+$("#nav-toggle").click(function () {
+    $("#nav-links").toggleClass("show");
+});

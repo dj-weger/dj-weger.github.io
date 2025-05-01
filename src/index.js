@@ -11,13 +11,15 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-<script>
-    function toggleMenu() {
-    var navLinks = document.getElementById("navLinks");
-    if (navLinks.style.display === "block") {
-        navLinks.style.display = "none";
-    } else {
-        navLinks.style.display = "block";
-    }
-}
-</script>
+$(document).ready(function () {
+    // ... your existing code ...
+
+    $("#nav-toggle").click(function () {
+        $(".nav-links").toggleClass("show"); // Use class selector here
+    });
+
+    // Optional: Hide the menu when a link is clicked (useful for single-page sites)
+    $(".nav-links a").click(function () {
+        $(".nav-links").removeClass("show");
+    });
+});

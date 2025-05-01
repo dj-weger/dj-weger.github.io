@@ -1,4 +1,4 @@
-body {
+﻿body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -78,6 +78,13 @@ nav {
     border-radius: 5px;
 }
 
+/* Add this CSS */
+.nav-links.show {
+    display: flex; /* Or block, depending on desired layout */
+    flex-direction: column; /* Stack links vertically */
+    /* Add any other styling for the open menu (e.g., padding, background) */
+}
+
 /* Show the hamburger menu on small screens */
 @media (max-width: 550px) {
     .nav-links {
@@ -136,7 +143,14 @@ footer {
     bottom: 0;
 }
 
+a {
+    color: #B0C4DE; /* übernimmt die Farbe vom Elternelement, z. B. weiß bei dir */
+    text-decoration: underline;
+}
 
+    a:hover {
+        color: #ff4081; /* z. B. pinker Hover-Effekt, optional */
+    }
 
 .carousel {
     display: flex;
